@@ -1,1 +1,34 @@
-{{outlet}}
+<div class="row">
+    <div class="columns large-9">
+        <label>
+            Title
+            <input type="text" value={{model.title}}>
+        </label>
+        <label>
+            Description
+            <textarea>{{model.description}}</textarea>
+        </label>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="columns large-7">
+        <label>Ingredients</label>
+        {{ingredients-editor ingredients=model.ingredients}}
+
+    </div>
+    <div class="columns large-5">
+        <label>Photos</label>
+
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="columns">
+        <label>Steps</label>
+    </div>
+</div>
