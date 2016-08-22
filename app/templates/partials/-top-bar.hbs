@@ -1,12 +1,17 @@
 <div class="top-bar">
     <div class="top-bar-left">
         <ul class="menu">
-            {{#link-to 'index'}}
+            <li>{{#link-to 'index'}}
                 Recipes
-            {{/link-to}}
-            {{#link-to 'ingredients'}}
+            {{/link-to}}</li>
+            <li>{{#link-to 'ingredients'}}
                 Ingredients
-            {{/link-to}}
+            {{/link-to}}</li>
         </ul>
+    </div>
+    <div class="top-bar-right">
+        {{#link-to 'recipe.new'}}
+            New
+        {{/link-to}}
     </div>
 </div>
