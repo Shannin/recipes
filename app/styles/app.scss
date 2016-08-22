@@ -1,4 +1,6 @@
-@import "ember-foundation";
+@import "settings";
+@import 'foundation';
+@include foundation-everything;
 
 @import "partials/top-bar";
 
