@@ -1,19 +1,6 @@
 <ul class="ingredients-editor">
-    {{#each ingredients as |ingredient|}}
-        <li class="row">
-            <div class="columns small-3">
-                <input type="number" name="qty[]" value={{ingredient.qty}}>
-            </div>
-            <div class="columns small-1">
-                {{ingredient.unit}}
-            </div>
-            <div class="columns small-7">
-                {{ingredient.name}}
-            </div>
-            <div class="columns small-1  text-right">
-                <a {{action "remove" ingredient.id}}>-</a>
-            </div>
-        </li>
+    {{#each ingredients as |i|}}
+        {{ingredients-editor-row ingredient=i}}
     {{/each}}
     <li class="row">
         <div class="columns text-right">
